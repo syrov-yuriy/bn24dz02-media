@@ -12,7 +12,8 @@ body {
     text-align: center;
 }
 
-.A_SearchInput {
+.A_SearchInput,
+.A_Input {
     font-size: 16px;
     border: 1px solid #000;
     padding: 12px 20px;
@@ -20,7 +21,8 @@ body {
     min-width: 400px;
 }
 
-.A_SearchButton {
+.A_SearchButton,
+.A_Button {
     font-size: 16px;
     border: 1px solid #000;
     background-color: #000;
@@ -30,7 +32,8 @@ body {
     cursor: pointer;
 }
 
-.A_SearchButton.disabled {
+.A_SearchButton.disabled,
+.A_Button.disabled {
     cursor: default;
     opacity: 0.5;
 }
@@ -71,4 +74,21 @@ body {
 .A_SearchDelete.disabled::after {
     content: '';
     cursor: default;
+}
+
+.A_Button.reset {
+    position: relative;
+    display: inline;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+
+.A_Button.reset::after {
+    content: '×';
+    position: absolute;
+    top: -13px;
+    right: 20px;
+    cursor: pointer;
 }

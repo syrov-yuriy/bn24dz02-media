@@ -13,6 +13,7 @@ const htmlPages = [
   createPages('./src/pages/articles.html', './articles.html', ['index']),
   createPages('./src/pages/search.html', './search.html', ['index', 'searchdata', 'search']),
   createPages('./src/pages/react.html', './react.html', ['index', 'react']),
+  createPages('./src/pages/search-react.html', './search-react.html', ['index', 'searchdata', 'searchreact']),
 ]
 
 module.exports = htmlPages
